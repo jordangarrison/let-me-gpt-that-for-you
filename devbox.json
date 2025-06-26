@@ -1,0 +1,25 @@
+{
+  "packages": [
+    "nodejs@20",
+    "yarn@1.22.22",
+    "git"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to Let Me GPT That For You development environment!'",
+      "echo 'Node.js version:' $(node --version)",
+      "echo 'Yarn version:' $(yarn --version)",
+      "if [ ! -d node_modules ]; then echo 'Installing dependencies...'; yarn install; fi"
+    ],
+    "scripts": {
+      "dev": "yarn dev",
+      "build": "yarn build",
+      "preview": "yarn preview",
+      "lint": "yarn lint",
+      "format": "yarn format"
+    }
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
