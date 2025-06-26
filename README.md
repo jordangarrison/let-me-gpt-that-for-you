@@ -2,6 +2,8 @@
 
 A modern clone of "Let me Google that for you" but for AI chat interfaces! Create shareable links that demonstrate different AI providers (ChatGPT, Gemini, Claude) with custom questions.
 
+![Let Me GPT That For You](image.png)
+
 ## Features
 
 - 🤖 Support for multiple AI providers (ChatGPT, Gemini, Claude)
