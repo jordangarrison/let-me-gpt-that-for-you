@@ -7,6 +7,8 @@
 </svelte:head>
 
 <script>
+  import { encodeQuery } from '$lib/url-encoder';
+
   let aiProvider = 'chatgpt';
   let query = '';
   let generatedLink = '';
@@ -21,7 +23,7 @@
 
   function generateLink() {
     if (!query.trim()) return;
-    generatedLink = `${window.location.origin}/chat/${aiProvider}?q=${encodeURIComponent(query)}`;
+    generatedLink = `${window.location.origin}/chat/${aiProvider}?q=${encodeQuery(query)}`;
     showLink = true;
   }
 

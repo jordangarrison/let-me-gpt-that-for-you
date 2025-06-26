@@ -1,6 +1,7 @@
 <script>
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
+  import { encodeQuery } from '$lib/url-encoder';
 
   $: provider = $page.params.provider;
   $: query = $page.url.searchParams.get('q') || '';
@@ -25,7 +26,7 @@
 
     // Build ChatGPT URL with query parameter
     redirectUrl = query 
-      ? `${providerInfo[provider].baseUrl}?q=${encodeURIComponent(query)}`
+      ? `${providerInfo[provider].baseUrl}?q=${encodeQuery(query)}`
       : providerInfo[provider].baseUrl;
 
     // Copy the full URL to clipboard if available
