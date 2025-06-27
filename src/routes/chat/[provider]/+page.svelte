@@ -58,66 +58,66 @@
   <title>Redirecting to {providerInfo[provider]?.name || 'AI Provider'}...</title>
 </svelte:head>
 
-<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+<div class="min-h-screen bg-brutal-cyan flex items-center justify-center p-4">
   <div class="max-w-2xl w-full text-center">
-    <div class="bg-white rounded-2xl shadow-xl p-8">
+    <div class="card-brutal p-8 transform -rotate-1">
       <!-- Loading animation -->
-      <div class="mb-6">
-        <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto"></div>
+      <div class="mb-8">
+        <div class="w-20 h-20 border-6 border-black border-t-brutal-yellow mx-auto animate-spin bg-white shadow-brutal"></div>
       </div>
 
       <!-- Header -->
-      <h1 class="text-3xl font-bold text-gray-800 mb-4">
-        Redirecting to {providerInfo[provider]?.name}
+      <h1 class="text-3xl md:text-4xl font-black text-black mb-6 uppercase tracking-wide">
+        REDIRECTING TO {providerInfo[provider]?.name}
       </h1>
       
-      <p class="text-lg text-gray-600 mb-6">
+      <p class="text-xl font-bold text-black bg-brutal-pink border-3 border-black shadow-brutal px-4 py-2 inline-block transform rotate-1 uppercase mb-8">
         {providerInfo[provider]?.description}
       </p>
 
       <!-- Query display -->
       {#if query}
-        <div class="bg-gray-50 rounded-lg p-4 mb-6">
-          <p class="text-sm text-gray-600 mb-2">You'll be asked to respond to:</p>
-          <p class="text-lg font-semibold text-gray-800 italic">"{query}"</p>
+        <div class="bg-white border-5 border-black shadow-brutal p-6 mb-8 transform rotate-1">
+          <p class="text-lg font-black text-black mb-4 uppercase tracking-wide">YOU'LL BE ASKED TO RESPOND TO:</p>
+          <p class="text-xl font-bold text-black bg-brutal-yellow border-3 border-black p-3 font-mono">"{query}"</p>
           {#if queryCopied}
-            <p class="text-sm text-green-600 mt-2">✓ ChatGPT URL copied to clipboard!</p>
+            <p class="text-lg font-black text-brutal-lime mt-4 uppercase">✓ CHATGPT URL COPIED TO CLIPBOARD!</p>
           {/if}
         </div>
       {/if}
 
       <!-- Instructions -->
-      <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-        <h3 class="font-semibold text-blue-800 mb-2">Instructions:</h3>
-        <ol class="text-left text-blue-700 space-y-1">
-          <li>1. You'll be redirected to {providerInfo[provider]?.name}</li>
+      <div class="bg-brutal-orange border-5 border-black shadow-brutal p-6 mb-8 transform -rotate-1">
+        <h3 class="text-2xl font-black text-black mb-4 uppercase tracking-wide">INSTRUCTIONS:</h3>
+        <ol class="text-left text-black space-y-2 font-bold text-lg">
+          <li class="bg-white border-3 border-black p-2 shadow-brutal mb-2">1. YOU'LL BE REDIRECTED TO {providerInfo[provider]?.name}</li>
           {#if query}
-            <li>2. The question is pre-filled for you: "{query}"</li>
+            <li class="bg-white border-3 border-black p-2 shadow-brutal mb-2">2. THE QUESTION IS PRE-FILLED FOR YOU: "{query}"</li>
           {/if}
-          <li>{query ? '3' : '2'}. Get a real AI response!</li>
+          <li class="bg-white border-3 border-black p-2 shadow-brutal mb-2">{query ? '3' : '2'}. GET A REAL AI RESPONSE!</li>
         </ol>
       </div>
 
       <!-- Countdown -->
-      <p class="text-gray-600 mb-4">
-        Redirecting in <span class="font-bold text-blue-600">{countdown}</span> seconds...
+      <p class="text-2xl font-black text-black mb-6 bg-white border-3 border-black shadow-brutal px-4 py-2 inline-block uppercase">
+        REDIRECTING IN <span class="text-brutal-pink">{countdown}</span> SECONDS...
       </p>
 
       <!-- Manual redirect button -->
       <button 
         on:click={redirectNow}
-        class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+        class="btn-brutal-primary text-xl mb-6"
       >
-        Go to {providerInfo[provider]?.name} Now
+        GO TO {providerInfo[provider]?.name} NOW
       </button>
 
       <!-- Back to home -->
       <div class="mt-6">
         <a 
           href="/" 
-          class="text-blue-600 hover:text-blue-700 underline"
+          class="btn-brutal text-lg"
         >
-          ← Create another link
+          ← CREATE ANOTHER LINK
         </a>
       </div>
     </div>

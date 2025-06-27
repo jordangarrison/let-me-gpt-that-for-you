@@ -39,46 +39,46 @@
   }
 </script>
 
-<div class="min-h-screen bg-white flex items-center justify-center p-4">
+<div class="min-h-screen bg-brutal-yellow flex items-center justify-center p-4">
   <div class="max-w-2xl w-full">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h1 class="text-5xl md:text-7xl font-light text-gray-700 mb-6">
-        Let me <span class="text-green-600 font-normal">GPT</span> that for you
+      <h1 class="text-4xl md:text-6xl text-brutal font-black text-black mb-6 transform -rotate-1">
+        LET ME <span class="bg-black text-brutal-yellow px-2 py-1 border-5 border-black shadow-brutal transform rotate-2 inline-block">GPT</span> THAT FOR YOU
       </h1>
-      <p class="text-xl text-gray-500">
-        For all those people who find it more convenient to ask you rather than ChatGPT
+      <p class="text-xl font-bold text-black bg-brutal-pink border-3 border-black shadow-brutal px-4 py-2 inline-block transform rotate-1">
+        FOR ALL THOSE PEOPLE WHO FIND IT MORE CONVENIENT TO ASK YOU RATHER THAN CHATGPT
       </p>
     </div>
 
     <!-- Main Form -->
-    <div class="bg-white rounded-2xl shadow-xl p-8">
+    <div class="card-brutal p-8 transform -rotate-1">
       {#if !showLink}
-        <form on:submit|preventDefault={generateLink} class="space-y-6">
+        <form on:submit|preventDefault={generateLink} class="space-y-8">
           <!-- Provider Info -->
-          <div class="text-center mb-6">
-            <div class="inline-flex items-center space-x-3 bg-green-50 border border-green-200 rounded-lg p-4">
-              <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center">
-                <span class="text-white font-bold text-lg">C</span>
+          <div class="text-center mb-8">
+            <div class="inline-flex items-center space-x-4 bg-brutal-cyan border-5 border-black shadow-brutal p-6 transform rotate-2">
+              <div class="w-16 h-16 bg-black flex items-center justify-center border-3 border-white shadow-brutal">
+                <span class="text-brutal-yellow font-black text-2xl">C</span>
               </div>
               <div class="text-left">
-                <div class="font-semibold text-green-800">ChatGPT</div>
-                <div class="text-sm text-green-700">OpenAI's conversational AI</div>
+                <div class="text-brutal text-2xl text-black">CHATGPT</div>
+                <div class="text-lg font-bold text-black">OPENAI'S CONVERSATIONAL AI</div>
               </div>
             </div>
           </div>
 
           <!-- Question Input -->
           <div>
-            <label for="question" class="block text-sm font-medium text-gray-700 mb-2">
-              What question should the AI answer?
+            <label for="question" class="block text-lg font-black text-black mb-4 uppercase tracking-wide">
+              WHAT QUESTION SHOULD THE AI ANSWER?
             </label>
             <textarea
               id="question"
               bind:value={query}
-              placeholder="e.g., How do I center a div in CSS?"
-              rows="3"
-              class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+              placeholder="E.G., HOW DO I CENTER A DIV IN CSS?"
+              rows="4"
+              class="input-brutal w-full resize-none"
               required
             ></textarea>
           </div>
@@ -87,54 +87,77 @@
           <button
             type="submit"
             disabled={!query.trim()}
-            class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            class="btn-brutal-primary w-full text-2xl disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none disabled:transform-none"
           >
-            Generate Link
+            GENERATE LINK
           </button>
         </form>
       {:else}
         <!-- Generated Link Display -->
-        <div class="text-center space-y-6">
-          <div class="text-green-600 text-lg font-semibold">
-            ✓ Link Generated Successfully!
+        <div class="text-center space-y-8">
+          <div class="bg-brutal-lime text-black text-2xl font-black border-5 border-black shadow-brutal p-4 transform rotate-1 uppercase">
+            ✓ LINK GENERATED SUCCESSFULLY!
           </div>
           
-          <div class="bg-gray-50 rounded-lg p-4 border">
-            <div class="text-sm text-gray-600 mb-2">Your shareable link:</div>
-            <div class="bg-white border rounded p-3 text-sm font-mono break-all">
+          <div class="bg-white border-5 border-black shadow-brutal p-6 transform -rotate-1">
+            <div class="text-lg font-black text-black mb-4 uppercase tracking-wide">YOUR SHAREABLE LINK:</div>
+            <div class="bg-brutal-cyan border-3 border-black p-4 text-sm font-mono break-all font-bold">
               {generatedLink}
             </div>
           </div>
 
-          <div class="flex space-x-3">
+          <div class="flex space-x-4">
             <button
               on:click={copyLink}
-              class="flex-1 bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition-colors"
+              class="btn-brutal-secondary flex-1 text-lg"
             >
-              Copy Link
+              COPY LINK
             </button>
             <a
               href={generatedLink}
               target="_blank"
-              class="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors text-center"
+              class="btn-brutal-accent flex-1 text-lg text-center inline-block"
             >
-              Try It Now
+              TRY IT NOW
             </a>
           </div>
 
           <button
             on:click={resetForm}
-            class="text-blue-600 hover:text-blue-700 underline"
+            class="btn-brutal text-lg"
           >
-            Create Another Link
+            CREATE ANOTHER LINK
           </button>
         </div>
       {/if}
     </div>
 
     <!-- Footer -->
-    <div class="text-center mt-8 text-gray-500 text-sm">
-      <p>Inspired by "Let me Google that for you" • Built with SvelteKit</p>
+    <div class="text-center mt-8 space-y-4">
+      <p class="bg-black text-brutal-yellow font-bold px-4 py-2 border-3 border-white shadow-brutal inline-block transform rotate-1 uppercase tracking-wide">
+        INSPIRED BY "LET ME GOOGLE THAT FOR YOU" • BUILT WITH VIBES
+      </p>
+      
+      <!-- Links -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a 
+          href="https://www.jordangarrison.dev" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="bg-brutal-cyan text-black font-bold px-4 py-2 border-3 border-black shadow-brutal hover:shadow-brutal-lg hover:translate-x-1 hover:translate-y-1 transition-all duration-200 uppercase tracking-wide transform -rotate-1"
+        >
+          👨‍💻 JORDANGARRISON.DEV
+        </a>
+        
+        <a 
+          href="https://github.com/jordangarrison/let-me-gpt-that-for-you" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="bg-brutal-pink text-black font-bold px-4 py-2 border-3 border-black shadow-brutal hover:shadow-brutal-lg hover:translate-x-1 hover:translate-y-1 transition-all duration-200 uppercase tracking-wide transform rotate-1"
+        >
+          🚀 VIEW ON GITHUB
+        </a>
+      </div>
     </div>
   </div>
 </div>
