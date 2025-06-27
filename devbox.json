@@ -2,7 +2,8 @@
   "packages": [
     "nodejs@20",
     "yarn@1.22.22",
-    "git"
+    "git",
+    "imagemagick@latest"
   ],
   "shell": {
     "init_hook": [
@@ -12,11 +13,11 @@
       "if [ ! -d node_modules ]; then echo 'Installing dependencies...'; yarn install; fi"
     ],
     "scripts": {
-      "dev": "yarn dev",
-      "build": "yarn build",
+      "dev":     "yarn dev",
+      "build":   "yarn build",
       "preview": "yarn preview",
-      "lint": "yarn lint",
-      "format": "yarn format"
+      "lint":    "yarn lint",
+      "format":  "yarn format"
     }
   },
   "env": {
