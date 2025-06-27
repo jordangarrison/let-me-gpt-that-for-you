@@ -6,4 +6,36 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Arial Black', 'Helvetica', sans-serif;
+}
+
+/* Neubrutalism Components */
+@layer components {
+  .btn-brutal {
+    @apply bg-black text-white border-5 border-black font-bold py-3 px-6 shadow-brutal hover:shadow-brutal-lg transition-all duration-200 hover:translate-x-1 hover:translate-y-1 uppercase tracking-wide;
+  }
+  
+  .btn-brutal-primary {
+    @apply bg-brutal-yellow text-black border-5 border-black font-bold py-3 px-6 shadow-brutal hover:shadow-brutal-lg transition-all duration-200 hover:translate-x-1 hover:translate-y-1 uppercase tracking-wide;
+  }
+  
+  .btn-brutal-secondary {
+    @apply bg-brutal-pink text-black border-5 border-black font-bold py-3 px-6 shadow-brutal hover:shadow-brutal-lg transition-all duration-200 hover:translate-x-1 hover:translate-y-1 uppercase tracking-wide;
+  }
+  
+  .btn-brutal-accent {
+    @apply bg-brutal-cyan text-black border-5 border-black font-bold py-3 px-6 shadow-brutal hover:shadow-brutal-lg transition-all duration-200 hover:translate-x-1 hover:translate-y-1 uppercase tracking-wide;
+  }
+  
+  .card-brutal {
+    @apply bg-white border-5 border-black shadow-brutal-xl;
+  }
+  
+  .input-brutal {
+    @apply border-5 border-black bg-white font-mono text-lg px-4 py-3 focus:outline-none focus:shadow-brutal-yellow focus:translate-x-1 focus:translate-y-1 transition-all duration-200;
+  }
+  
+  .text-brutal {
+    @apply font-brutal font-black uppercase tracking-wider;
+  }
 }
