@@ -13,8 +13,8 @@ export const DEFAULT_SEO: SEOData = {
   title: 'Let Me GPT That For You',
   description: 'For all those people who find it more convenient to ask you rather than ChatGPT',
   keywords: 'AI chat, ChatGPT links, AI demo, artificial intelligence, share AI responses, ChatGPT demo, AI tool, free AI',
-  canonical: 'https://letmegptthatforyou.com/',
-  ogImage: 'https://letmegptthatforyou.com/og-image.png',
+  canonical: 'https://www.lmgpt4u.com/',
+  ogImage: 'https://www.lmgpt4u.com/og-image.png',
   ogType: 'website',
   twitterCard: 'summary_large_image',
   robots: 'index, follow'
@@ -22,7 +22,7 @@ export const DEFAULT_SEO: SEOData = {
 
 export const SITE_CONFIG = {
   siteName: 'Let Me GPT That For You',
-  siteUrl: 'https://letmegptthatforyou.com',
+  siteUrl: 'https://www.lmgpt4u.com',
   author: 'Jordan Garrison',
   authorUrl: 'https://jordangarrison.dev',
   twitterHandle: '@jordangarrison',

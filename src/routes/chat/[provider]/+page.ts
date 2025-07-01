@@ -35,8 +35,8 @@ export const load: PageLoad = ({ params, url }) => {
       description: query 
         ? `Automatically redirecting to ${currentProvider.name} to answer: "${query.slice(0, 120)}${query.length > 120 ? '...' : ''}"`
         : `Automatically redirecting to ${currentProvider.name} - ${currentProvider.description}`,
-      canonicalUrl: `https://letmegptthatforyou.com/chat/${provider}${query ? `?q=${encodeURIComponent(query)}` : ''}`,
-      ogImage: 'https://letmegptthatforyou.com/og-image-chat.png'
+      canonicalUrl: `https://www.lmgpt4u.com/chat/${provider}${query ? `?q=${encodeURIComponent(query)}` : ''}`,
+      ogImage: 'https://www.lmgpt4u.com/og-image-chat.png'
     }
   };
 };

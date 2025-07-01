@@ -22,7 +22,7 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Let Me GPT That For You",
-      "url": "https://letmegptthatforyou.com",
+      "url": "https://www.lmgpt4u.com",
       "description": "For all those people who find it more convenient to ask you rather than ChatGPT",
       "applicationCategory": "Utility",
       "operatingSystem": "Web Browser",
