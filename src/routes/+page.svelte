@@ -2,14 +2,14 @@
   <title>Let Me GPT That For You - For all those people who find it more convenient to ask you rather than ChatGPT</title>
   <meta name="description" content="For all those people who find it more convenient to ask you rather than ChatGPT" />
   <meta name="keywords" content="AI chat, ChatGPT links, AI demo, artificial intelligence, share AI responses, ChatGPT demo, AI tool, free AI" />
-  <link rel="canonical" href="https://letmegptthatforyou.com/" />
+  <link rel="canonical" href="https://www.lmgpt4u.com/" />
   
   <!-- Open Graph tags -->
   <meta property="og:title" content="Let Me GPT That For You" />
   <meta property="og:description" content="For all those people who find it more convenient to ask you rather than ChatGPT" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://letmegptthatforyou.com/" />
-  <meta property="og:image" content="https://letmegptthatforyou.com/og-image.png" />
+  <meta property="og:url" content="https://www.lmgpt4u.com/" />
+  <meta property="og:image" content="https://www.lmgpt4u.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Let Me GPT That For You - AI Chat Link Generator" />
@@ -17,7 +17,7 @@
   <!-- Twitter Card tags -->
   <meta name="twitter:title" content="Let Me GPT That For You" />
   <meta name="twitter:description" content="For all those people who find it more convenient to ask you rather than ChatGPT" />
-  <meta name="twitter:image" content="https://letmegptthatforyou.com/og-image.png" />
+  <meta name="twitter:image" content="https://www.lmgpt4u.com/og-image.png" />
   <meta name="twitter:image:alt" content="Let Me GPT That For You - AI Chat Link Generator" />
   
   <!-- Structured Data for Homepage -->
@@ -27,7 +27,7 @@
       "@type": "WebApplication",
       "name": "Let Me GPT That For You",
       "alternateName": "LetMeGPT",
-      "url": "https://letmegptthatforyou.com",
+      "url": "https://www.lmgpt4u.com",
       "description": "For all those people who find it more convenient to ask you rather than ChatGPT",
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "Web Browser",
@@ -49,7 +49,7 @@
         "No registration required",
         "Instant link generation"
       ],
-      "screenshot": "https://letmegptthatforyou.com/screenshot.png",
+      "screenshot": "https://www.lmgpt4u.com/screenshot.png",
       "softwareVersion": "1.0",
       "datePublished": "2024-01-01",
       "dateModified": "2024-01-01"

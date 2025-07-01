@@ -1,7 +1,7 @@
 import type { RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async () => {
-  const baseUrl = 'https://letmegptthatforyou.com';
+  const baseUrl = 'https://www.lmgpt4u.com';
   
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
