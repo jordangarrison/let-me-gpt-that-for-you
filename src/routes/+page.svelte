@@ -1,9 +1,60 @@
 <svelte:head>
-  <title>Let Me GPT That For You - Create AI Chat Links</title>
-  <meta name="description" content="Create shareable links that automatically ask questions to ChatGPT with pre-filled prompts." />
+  <title>Let Me GPT That For You - For all those people who find it more convenient to ask you rather than ChatGPT</title>
+  <meta name="description" content="For all those people who find it more convenient to ask you rather than ChatGPT" />
+  <meta name="keywords" content="AI chat, ChatGPT links, AI demo, artificial intelligence, share AI responses, ChatGPT demo, AI tool, free AI" />
+  <link rel="canonical" href="https://letmegptthatforyou.com/" />
+  
+  <!-- Open Graph tags -->
   <meta property="og:title" content="Let Me GPT That For You" />
-  <meta property="og:description" content="Create shareable links that demonstrate AI chat interfaces" />
+  <meta property="og:description" content="For all those people who find it more convenient to ask you rather than ChatGPT" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://letmegptthatforyou.com/" />
+  <meta property="og:image" content="https://letmegptthatforyou.com/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Let Me GPT That For You - AI Chat Link Generator" />
+  
+  <!-- Twitter Card tags -->
+  <meta name="twitter:title" content="Let Me GPT That For You" />
+  <meta name="twitter:description" content="For all those people who find it more convenient to ask you rather than ChatGPT" />
+  <meta name="twitter:image" content="https://letmegptthatforyou.com/og-image.png" />
+  <meta name="twitter:image:alt" content="Let Me GPT That For You - AI Chat Link Generator" />
+  
+  <!-- Structured Data for Homepage -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Let Me GPT That For You",
+      "alternateName": "LetMeGPT",
+      "url": "https://letmegptthatforyou.com",
+      "description": "For all those people who find it more convenient to ask you rather than ChatGPT",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web Browser",
+      "browserRequirements": "Requires JavaScript enabled",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Jordan Garrison",
+        "url": "https://jordangarrison.dev"
+      },
+      "featureList": [
+        "Generate shareable AI chat links",
+        "Support for ChatGPT, Gemini, and Claude",
+        "Free to use",
+        "No registration required",
+        "Instant link generation"
+      ],
+      "screenshot": "https://letmegptthatforyou.com/screenshot.png",
+      "softwareVersion": "1.0",
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-01-01"
+    }
+  </script>
 </svelte:head>
 
 <script>
@@ -42,17 +93,17 @@
 <div class="min-h-screen bg-brutal-yellow flex items-center justify-center p-4">
   <div class="max-w-2xl w-full">
     <!-- Header -->
-    <div class="text-center mb-12">
+    <header class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl text-brutal font-black text-black mb-6 transform -rotate-1">
         LET ME <span class="bg-black text-brutal-yellow px-2 py-1 border-5 border-black shadow-brutal transform rotate-2 inline-block">GPT</span> THAT FOR YOU
       </h1>
       <p class="text-xl font-bold text-black bg-brutal-pink border-3 border-black shadow-brutal px-4 py-2 inline-block transform rotate-1">
         FOR ALL THOSE PEOPLE WHO FIND IT MORE CONVENIENT TO ASK YOU RATHER THAN CHATGPT
       </p>
-    </div>
+    </header>
 
     <!-- Main Form -->
-    <div class="card-brutal p-8 transform -rotate-1">
+    <main class="card-brutal p-8 transform -rotate-1">
       {#if !showLink}
         <form on:submit|preventDefault={generateLink} class="space-y-8">
           <!-- Provider Info -->
@@ -80,7 +131,11 @@
               rows="4"
               class="input-brutal w-full resize-none"
               required
+              aria-describedby="question-help"
             ></textarea>
+            <div id="question-help" class="sr-only">
+              Enter the question you want the AI to answer. This will be included in the shareable link.
+            </div>
           </div>
 
           <!-- Generate Button -->
@@ -130,7 +185,7 @@
           </button>
         </div>
       {/if}
-    </div>
+    </main>
 
     <!-- Footer -->
     <div class="text-center mt-8 space-y-4">
