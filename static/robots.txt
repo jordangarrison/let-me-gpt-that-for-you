@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /chat/*
+
+# Allow indexing of main pages but not individual chat redirects
+# since they're temporary redirect pages
+
+Sitemap: https://letmegptthatforyou.com/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
